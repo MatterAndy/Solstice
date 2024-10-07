@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometries</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="controls">
+        <label for="speed">Orbit Speed:</label>
+        <input type="range" id="speed" name="speed" min="0.1" max="10" value="1" step="0.1">
+    </div>
+    
+    
+    <style>
+        #controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 100;  /* Ensure it appears above the canvas */
+            color: white;
+        }
+    </style>
+    <canvas class="webgl"></canvas>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
